@@ -91,7 +91,7 @@ def get_activities():
             "schedule": activity["schedule"],
             "participants": {
                 "count": len(activity["participants"]),
-                "emails": activity["participants"]
+                "emails": activity["participants"]  # Include participant emails
             },
             "max_participants": activity["max_participants"]
         }
