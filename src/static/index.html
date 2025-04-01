@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1>Mergington High School</h1>
+      <h1 id="school-name">Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
     </header>
 
@@ -16,8 +16,20 @@
       <section id="activities-container">
         <h3>Available Activities</h3>
         <div id="activities-list">
-          <!-- Activities will be loaded here -->
-          <p>Loading activities...</p>
+          <!-- Example activity card -->
+          <div class="activity-card">
+            <h4>Chess Club</h4>
+            <p>Learn strategies and compete in chess tournaments</p>
+            <p><strong>Schedule:</strong> Fridays, 3:30 PM - 5:00 PM</p>
+            <div class="participants">
+              <h5>Participants:</h5>
+              <ul>
+                <li>michael@mergington.edu</li>
+                <li>daniel@mergington.edu</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Repeat for other activities -->
         </div>
       </section>
 
@@ -37,7 +49,7 @@
           </div>
           <button type="submit">Sign Up</button>
         </form>
-        <div id="message" class="hidden"></div>
+        <div id="message" class="hidden" role="alert"></div>
       </section>
     </main>
 
