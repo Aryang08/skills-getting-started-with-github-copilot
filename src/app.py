@@ -89,8 +89,11 @@ def get_activities():
         name: {
             "description": activity["description"],
             "schedule": activity["schedule"],
-            "participants": activity["participants"],
-            "max_participants": activity["max_participants"]  # Added field
+            "participants": {
+                "count": len(activity["participants"]),
+                "emails": activity["participants"]
+            },
+            "max_participants": activity["max_participants"]
         }
         for name, activity in activities.items()
     }
